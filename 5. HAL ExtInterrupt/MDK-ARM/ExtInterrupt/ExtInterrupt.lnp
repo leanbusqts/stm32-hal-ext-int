@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"extinterrupt\system_stm32f1xx.o"
+"extinterrupt\stm32f1xx_it.o"
+"extinterrupt\main.o"
+"extinterrupt\stm32f1xx_hal_msp.o"
+"extinterrupt\stm32f1xx_hal.o"
+"extinterrupt\stm32f1xx_hal_gpio.o"
+"extinterrupt\stm32f1xx_hal_pwr.o"
+"extinterrupt\stm32f1xx_hal_gpio_ex.o"
+"extinterrupt\stm32f1xx_hal_cortex.o"
+"extinterrupt\stm32f1xx_hal_flash.o"
+"extinterrupt\stm32f1xx_hal_flash_ex.o"
+"extinterrupt\stm32f1xx_hal_tim.o"
+"extinterrupt\stm32f1xx_hal_rcc_ex.o"
+"extinterrupt\stm32f1xx_hal_dma.o"
+"extinterrupt\stm32f1xx_hal_rcc.o"
+"extinterrupt\stm32f1xx_hal_tim_ex.o"
+"extinterrupt\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "ExtInterrupt\ExtInterrupt.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ExtInterrupt.map" -o ExtInterrupt\ExtInterrupt.axf
